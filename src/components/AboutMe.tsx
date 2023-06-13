@@ -3,10 +3,10 @@ import React from "react";
 export function AboutMe() {
   return (
     <div className="flex flex-col mt-6">
-        <div className="flex relative bg-light w-28 h-28 rounded-full justify-center items-center top-14 left-8">
+        <div className="flex relative bg-light w-28 h-28 rounded-full justify-center items-center top-14 left-8 drop-shadow-md z-10">
             <p className=" text-dark-apple font-medium p-3">About me</p>
         </div>
-        <div className="mr-8 rounded-r-xl bg-light bg-opacity-20 px-8 pt-20 pb-16 border-t-2 border-b-2 border-r-2 border-light">
+        <div className="mr-8 rounded-r-xl bg-light bg-opacity-20 px-8 pt-20 pb-16 border-t-2 border-b-2 border-r-2 border-light drop-shadow-md z-0">
             <p className="text-light font-medium">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I consider myself as a sincere and dedicated person, with a
                 curious mind that keeps me active and persevering.

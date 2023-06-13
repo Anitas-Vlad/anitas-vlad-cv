@@ -3,10 +3,10 @@ import React from "react";
 function EducationAndTraining(){
     return(
         <div className="flex flex-col mt-6 right-60">
-            <div className="flex relative bg-light w-36 h-36 rounded-full justify-center items-center top-[72px] right-8 self-end ">
+            <div className="flex relative bg-light w-36 h-36 rounded-full justify-center items-center top-[72px] right-8 self-end z-10">
                 <p className=" text-dark-apple font-medium p-3 text-center">Education & Training</p>
             </div>
-            <div className="flex flex-col ml-8 rounded-l-xl bg-light bg-opacity-20 px-8 pt-20 pb-16 border-t-2 border-b-2 border-l-2 border-light text-center">
+            <div className="flex flex-col ml-8 rounded-l-xl bg-light bg-opacity-20 px-8 pt-20 pb-16 border-t-2 border-b-2 border-l-2 border-light text-center drop-shadow-md z-0">
                 <p className="text-light text-xl font-bold mb-3"> Full Stack .Net Developer - School of Applied Technology {'</salt>'}</p>
                 <div className="self-center w-3 h-3 bg-light rounded-b-full mb-3"></div>
                 <p className="text-light font-medium mb-3">
