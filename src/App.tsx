@@ -1,7 +1,5 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import SideBar from "./components/SideBar";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import TechnicalSkills from "./components/TechnicalSkills";

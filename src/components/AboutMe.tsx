@@ -1,9 +1,5 @@
 import React from "react";
 
-interface props {
-  children: Element[];
-}
-
 export function AboutMe() {
   return (
     <div className="flex flex-col mt-6">
