@@ -5,6 +5,9 @@ import AboutMe from "./components/AboutMe";
 import TechnicalSkills from "./components/TechnicalSkills";
 import SoftSkills from "./components/SoftSkills";
 import EducationAndTraining from "./components/EducationAndTraining";
+import WorkExperience from "./components/WorkExperience";
+import Languages from "./components/Languages";
+import ContactAndLinks from "./components/ContactAndLinks";
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
       <TechnicalSkills/>
       <SoftSkills/>
       <EducationAndTraining/>
+      <WorkExperience/>
+      <Languages/>
+      <ContactAndLinks/>
     </div>
   );
 }
