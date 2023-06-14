@@ -12,6 +12,9 @@ module.exports = {
         yellow: "#DDCCA1",
         light: "#F5F5F7",
       },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(green, gransparent, green)'
+      }
     },
   },
   plugins: [],

@@ -3,8 +3,8 @@ import React from "react";
 function ContactAndLinks(){
     return (
         <div className="flex flex-col">
-            <div className="flex relative bg-light w-28 h-28 rounded-full justify-center items-center top-14 self-center drop-shadow-md z-10">
-                <p className=" text-dark-apple font-medium p-3 text-center">Work Experience</p>
+            <div className="flex relative bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-500/30 to-blue-700/20 backdrop-blur-3xl border-2 border-light shadow-lg w-32 h-32 rounded-full justify-center items-center top-14 self-center drop-shadow-md z-10">
+                <p className=" text-light text-xl font-medium p-3 text-center">Contact and Links</p>
             </div>
             <div className="flex flex-wrap bg-light bg-opacity-20 px-8 pt-20 pb-10 border-t-2 border-light drop-shadow-md z-0 justify-center text-center">
                 <a className="flex content-center mx-4 justify-center text-center p-2 border-2 border-light rounded-xl w-10" href="https://www.linkedin.com/in/vlad-anitas-388a21223/">
