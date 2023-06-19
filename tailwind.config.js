@@ -11,10 +11,17 @@ module.exports = {
         green: "#81A88F",
         yellow: "#DDCCA1",
         light: "#F5F5F7",
+        orange: {
+          power: "#F42F26",
+          tab: "#FD5B49",
+        },
+        blue: {
+          tab: "#40728C",
+        },
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(green, gransparent, green)'
-      }
+        "gradient-radial": "radial-gradient(green, gransparent, green)",
+      },
     },
   },
   plugins: [],
