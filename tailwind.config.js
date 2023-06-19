@@ -17,6 +17,7 @@ module.exports = {
         },
         blue: {
           tab: "#40728C",
+          power: "#006DAF"
         },
       },
       backgroundImage: {

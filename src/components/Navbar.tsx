@@ -14,10 +14,9 @@ function Navbar() {
         onClick={() => swapSelectedPage("home")}
         className={classNames(
           "duration-700 mx-4 bg-transparent flex relative self-center w-fit rounded-xl justify-center items-center top-8 drop-shadow-md z-10 text-light font-bold text-xl p-3",
-          { "bg-blue-tab": isOptionSelected("home") }
+          { "bg-blue-power": isOptionSelected("home") }
         )}
       >
-        {" "}
         Home
       </Button>
 
@@ -25,7 +24,7 @@ function Navbar() {
         onClick={() => swapSelectedPage("projects")}
         className={classNames(
           "duration-500 mx-4 bg-transparent flex relative self-center w-fit rounded-xl justify-center items-center top-8 drop-shadow-md z-10 text-light font-bold text-xl p-3",
-          { "bg-blue-tab": isOptionSelected("projects") }
+          { "bg-blue-power": isOptionSelected("projects") }
         )}
       >
         Projects

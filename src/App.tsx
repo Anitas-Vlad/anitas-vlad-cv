@@ -8,22 +8,22 @@ import EducationAndTraining from "./components/EducationAndTraining";
 import WorkExperience from "./components/WorkExperience";
 import Languages from "./components/Languages";
 import ContactAndLinks from "./components/ContactAndLinks";
-import Projects from "./components/projects/Projects";
 import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="h-full w-full bg-gradient-to-r from-orange-power to-blue-tab pt-4">
-      <Header />
-      <Navbar />
-      <AboutMe />
-      <TechnicalSkills />
-      <SoftSkills />
-      <EducationAndTraining />
-      <WorkExperience />
-      <Languages />
-      <Projects />
-      <ContactAndLinks />
+    <div className="h-full w-full bg-dark-apple to-blue-tab pt-4">
+      <div className="flex flex-col  justify-center h-full w-full bg-dark-apple to-blue-tab">
+        <Header />
+        <Navbar />
+        <AboutMe />
+        <TechnicalSkills />
+        <SoftSkills />
+        <EducationAndTraining />
+        <WorkExperience />
+        <Languages />
+        <ContactAndLinks />
+      </div>
     </div>
   );
 }
