@@ -9,7 +9,7 @@ export function AboutMe() {
       <div className="flex flex-col justify-center rounded-r-xl bg-gradient-to-b from-orange-power to-blue-power p-1 pl-0 drop-shadow-md z-0">
         <div className="mr-8 rounded-r-xl bg-dark-apple px-8 pt-20 pb-16">
           <p className="text-light font-medium">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I consider myself as a sincere and
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I consider myself as an honest and
             dedicated person, with a curious mind that keeps me active and
             persevering.
           </p>
