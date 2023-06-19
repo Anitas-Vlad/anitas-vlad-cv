@@ -18,7 +18,7 @@ function EducationAndTraining() {
             and mob programming
           </p>
           <br></br>
-          <span className="bg-gradient-to-r from-blue-tab to-blue-power h-1 w-screen rounded-full"></span>
+          <span className="bg-gradient-to-r from-blue-tab to-blue-power h-1 w-full rounded-full"></span>
           <br></br>
           <p className="text-light text-xl font-bold mb-3">
             {" "}
@@ -31,7 +31,7 @@ function EducationAndTraining() {
             TDD and mob programming
           </p>
           <br></br>
-          <span className="bg-gradient-to-r from-blue-tab to-blue-power h-1 w-screen rounded-full"></span>
+          <span className="bg-gradient-to-r from-blue-tab to-blue-power h-1 w-full rounded-full"></span>
           <br></br>
 
           <p className="text-light text-xl font-bold mb-3">
