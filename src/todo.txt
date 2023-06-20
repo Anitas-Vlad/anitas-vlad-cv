@@ -1,25 +1,2 @@
-RESPONSIVENESS
-
-
-z-10
-drop-shadow-md z-0
-
-Header.tsx {
-
-{/* <div className="border-2 border-light mx-8 rounded-2xl p-4">
-  <h1 className="text-light text-center text-xl font-normal">
-    Hey, my name is Vlad
-  </h1>
-  <br></br>
-  <h1 className="text-light text-center text-xl font-normal">
-    I will be your next junior developer!
-  </h1>
-</div> */}
-
-}
-
-
-<link
-  href="https://fonts.googleapis.com/css?family=Poppins"
-  rel="stylesheet"
-></link>;
+-display none la about, header, languages and contact
+-display another Component (SIDEBAR)

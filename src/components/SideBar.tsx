@@ -1,14 +1,21 @@
 import React from "react";
+import Header from "./Header";
+import AboutMe from "./AboutMe";
+import Languages from "./Languages";
+import ContactAndLinks from "./ContactAndLinks";
 
-function SideBar() {
+interface props {
+  selectedPage: string;
+}
+
+function SideBar(prop: props) {
   return (
-    <>
-      <div className="flex w-1/6 h-screen bg-blue-500 rounded-md">
-        <div className="w-screen h-1/6 bg-blue-200 text-center items-center rounded-md">
-          <p className="text-white justify-center">Anitas Vlad</p>
-        </div>
-      </div>
-    </>
+    <div>
+      <Header />
+      <AboutMe selectedPage={prop.selectedPage} />
+      {/* <Languages  selectedPage={selectedPage}/>/> */}
+      <ContactAndLinks />
+    </div>
   );
 }
 

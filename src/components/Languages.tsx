@@ -1,8 +1,16 @@
 import React from "react";
+import classNames from "classnames";
 
-function Languages() {
+interface props {
+  selectedPage: string;
+}
+
+function Languages(prop: props) {
+  
+  const isOptionSelected = (opt: string) => prop.selectedPage === opt;
+
   return (
-    <div className="flex flex-col mt-6">
+    <div className={classNames("flex flex-col mt-6", {"hidden" : !isOptionSelected("home")})}>
       <p className="flex relative self-center bg-orange-power backdrop-blur-3xl w-fit rounded-xl justify-center items-center top-7 z-10 text-light font-bold text-xl py-3 pl-4 pr-4">
         Languages
       </p>

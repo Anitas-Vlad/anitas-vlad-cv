@@ -1,8 +1,16 @@
 import React from "react";
+import classNames from "classnames";
 
-function SoftSkills() {
+interface props {
+  selectedPage: string;
+}
+
+function SoftSkills(prop: props) {
+
+  const isOptionSelected = (opt: string) => prop.selectedPage === opt;
+
   return (
-    <div className="flex flex-col mt-6">
+    <div className={classNames("flex flex-col mt-6 duration-300", {"hidden duration-300" : !isOptionSelected("home")})}>
       <p className="flex relative self-center bg-blue-power backdrop-blur-3xl w-fit rounded-xl justify-center items-center top-7 z-10 text-light font-bold text-xl py-3 pl-4 pr-4">
         Soft Skills
       </p>
