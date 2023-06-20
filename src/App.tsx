@@ -20,29 +20,33 @@ function App() {
   const isOptionSelected = (opt: string) => selectedPage === opt;
 
   return (
-    <div className="h-full w-full bg-dark-apple to-blue-tab pt-4">
-      <div className="flex flex-col  justify-center h-full w-full bg-dark-apple to-blue-tab">
+    <div className="h-full w-full bg-dark-apple pt-4">
+      <div className="flex flex-col  justify-center h-full w-full bg-dark-apple">
         <Header />
-        <div className="flex justify-center">
-          <Button
-            onClick={() => swapSelectedPage("home")}
-            className={classNames(
-              "duration-700 mx-4 bg-transparent flex relative self-center w-fit rounded-xl justify-center items-center top-8 drop-shadow-md z-10 text-light font-bold text-xl p-3",
-              { "bg-blue-power": isOptionSelected("home") }
-            )}
-          >
-            Home
-          </Button>
+        <div className="flex relative justify-center top-8">
+          <div className={classNames("flex relative duration-300 self-center w-fit justify-center  bg-dark-appleitems-center backdrop-blur-3xl rounded-xl p-1  mx-4", {"bg-blue-power" : isOptionSelected("home")})}>
+            <Button
+              onClick={() => swapSelectedPage("home")}
+              className={classNames(
+                "items-center z-10 text-light font-bold text-xl rounded-md px-4 py-2",
+                { "bg-dark-apple": isOptionSelected("home") }
+              )}
+            >
+              Home
+            </Button>
+          </div>
 
-          <Button
-            onClick={() => swapSelectedPage("projects")}
-            className={classNames(
-              "duration-500 mx-4 bg-transparent flex relative self-center w-fit rounded-xl justify-center items-center top-8 drop-shadow-md z-10 text-light font-bold text-xl p-3",
-              { "bg-blue-power": isOptionSelected("projects") }
-            )}
-          >
-            Projects
-          </Button>
+          <div className={classNames("flex relative duration-300 self-center w-fit justify-center  bg-dark-appleitems-center backdrop-blur-3xl rounded-xl p-1 mx-4", {"bg-orange-power" : isOptionSelected("projects")})}>
+            <Button
+              onClick={() => swapSelectedPage("projects")}
+              className={classNames(
+                "items-center z-10 text-light font-bold text-xl rounded-md px-4 py-2",
+                { "bg-dark-apple": isOptionSelected("projects") }
+              )}
+            >
+              Projects
+            </Button>
+          </div>
         </div>
         <AboutMe selectedPage={selectedPage}/>
         <TechnicalSkills selectedPage={selectedPage}/>
