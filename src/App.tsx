@@ -8,7 +8,6 @@ import EducationAndTraining from "./components/EducationAndTraining";
 import WorkExperience from "./components/WorkExperience";
 import Languages from "./components/Languages";
 import ContactAndLinks from "./components/ContactAndLinks";
-import { useContext } from "react";
 import { useState } from "react";
 import { Button } from "@material-tailwind/react";
 import classNames from "classnames";
