@@ -12,8 +12,7 @@ function SideBar(prop: props) {
   return (
     <div>
       <Header />
-      <AboutMe selectedPage={prop.selectedPage} />
-      {/* <Languages  selectedPage={selectedPage}/>/> */}
+      <AboutMe  />
       <ContactAndLinks />
     </div>
   );

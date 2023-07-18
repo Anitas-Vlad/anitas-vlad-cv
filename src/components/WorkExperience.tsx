@@ -1,16 +1,9 @@
 import React from "react";
 import classNames from "classnames";
 
-interface props {
-  selectedPage: string;
-}
-
-function WorkExperience(prop: props) {
-
-  const isOptionSelected = (opt: string) => prop.selectedPage === opt;
-
+function WorkExperience() {
   return (
-    <div className={classNames("flex flex-col mt-6", {"hidden" : !isOptionSelected("home")})}>
+    <div className={classNames("flex flex-col mt-6")}>
       <p className="flex relative self-center bg-blue-power backdrop-blur-3xl w-fit rounded-xl justify-center items-center top-7 z-10 text-light font-bold text-xl py-3 pl-4 pr-4">
         Work Experience
       </p>

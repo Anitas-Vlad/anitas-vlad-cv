@@ -1,16 +1,11 @@
 import React from "react";
 import classNames from "classnames";
 
-interface props {
-  selectedPage: string;
-}
 
-export function AboutMe(prop: props) {
-
-  const isOptionSelected = (opt: string) => prop.selectedPage === opt;
+export function AboutMe() {
 
   return (
-    <div className={classNames("flex flex-col mt-12 mr-4 duration-300", {"hidden duration-300" : !isOptionSelected("home")})}>
+    <div className={classNames("flex flex-col mt-12 mr-4 duration-300")}>
       <p className="flex relative self-start bg-gradient-to-l from-orange-power to-blue-power backdrop-blur-3xl w-fit rounded-r-xl justify-center items-center top-7 z-10 text-light font-bold text-xl py-3 pl-6 pr-4">
         About me
       </p>

@@ -1,16 +1,10 @@
 import React from "react";
 import classNames from "classnames";
 
-interface props {
-  selectedPage: string;
-}
-
-function TechnicalSkills(prop: props) {
-
-  const isOptionSelected = (opt: string) => prop.selectedPage === opt;
+function TechnicalSkills() {
 
   return (
-    <div className={classNames("flex flex-col mt-6 ml-4 duration-300", {"hidden duration-300" : !isOptionSelected("home")})}>
+    <div className={classNames("flex flex-col mt-6 ml-4 duration-300")}>
       <p className="flex relative self-end bg-gradient-to-r from-orange-power to-blue-power backdrop-blur-3xl w-fit rounded-l-xl justify-center items-center top-7 z-10 text-light font-bold text-xl py-3 pl-4 pr-6">
         Technical Skills
       </p>

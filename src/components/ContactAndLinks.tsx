@@ -2,11 +2,11 @@ import React from "react";
 
 function ContactAndLinks() {
   return (
-    <div className="flex flex-col mt-6">
+    <div className="flex flex-col w-full  mt-6 bottom-0">
       <p className="flex relative self-center bg-blue-power backdrop-blur-3xl w-fit rounded-xl justify-center items-center top-7 z-10 text-light font-bold text-xl py-3 pl-4 pr-4">
         Contact and Links
       </p>
-      <div className="flex flex-col justify-center bg-gradient-to-t from-orange-power to-blue-power drop-shadow-md z-0 pt-1">
+      <div className="flex flex-col justify-center bg-gradient-to-t from-orange-power to-blue-power z-0 pt-1">
         <div className="flex justify-center bg-dark-apple px-8 pt-16 pb-12 text-center">
           <a
             className="flex mx-4 text-center p-2 border-2 border-light rounded-xl w-10"

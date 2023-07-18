@@ -1,0 +1,62 @@
+import React, { useState } from "react";
+import AboutMe from "../AboutMe";
+import ContactAndLinks from "../ContactAndLinks";
+import EducationAndTraining from "../EducationAndTraining";
+import Header from "../Header";
+import Languages from "../Languages";
+import SoftSkills from "../SoftSkills";
+import TechnicalSkills from "../TechnicalSkills";
+import WorkExperience from "../WorkExperience";
+import { Button } from "@material-tailwind/react";
+import classNames from "classnames";
+import PhoneHomeContent from "./PhoneHomeContent";
+import PhoneProjectsContent from "./PhoneProjectsContent";
+
+
+function Phone(){
+    const [selectedPage, setSelectedPage] = useState("home");
+    
+    const swapSelectedPage = (option: string) => setSelectedPage(option);
+    const isOptionSelected = (opt: string) => selectedPage === opt;
+    const [showHome, setShowHome] = useState(true);
+    const [showPhone, setShowPhone] = useState(true);
+  
+      return (
+        <div className="flex flex-col h-full w-full min-h-full pt-4">
+            <div className="w-full h-full absolute top-0 left-0 bg-dark-apple"></div>
+            <div className="justify-start h-full w-full bg-dark-apple">
+                <Header />
+                <div className="flex relative justify-center top-8">
+                    <div className={classNames("flex relative duration-300 self-center w-fit justify-center  bg-dark-appleitems-center backdrop-blur-3xl rounded-xl p-1  mx-4", {"bg-blue-power" : isOptionSelected("home")})}>
+                    <Button
+                        onClick={() => swapSelectedPage("home")}
+                        className={classNames(
+                        "items-center z-10 text-light font-bold text-xl rounded-md px-4 py-2",
+                        { "bg-dark-apple": isOptionSelected("home") }
+                        )}
+                    >
+                        Home
+                    </Button>
+                    </div>
+                    <div className={classNames("flex relative duration-300 self-center w-fit justify-center  bg-dark-appleitems-center backdrop-blur-3xl rounded-xl p-1 mx-4", {"bg-orange-power" : isOptionSelected("projects")})}>
+                    <Button
+                        onClick={() => swapSelectedPage("projects")}
+                        className={classNames(
+                        "items-center z-10 text-light font-bold text-xl rounded-md px-4 py-2",
+                        { "bg-dark-apple": isOptionSelected("projects") }
+                        )}
+                    >
+                        Projects
+                    </Button>
+                    </div>
+                </div>
+
+                <PhoneHomeContent selectedPage={selectedPage}/>
+                <PhoneProjectsContent selectedPage={selectedPage}/>
+                <ContactAndLinks />
+            </div>
+        </div>
+      )
+  }
+  
+  export default Phone;
