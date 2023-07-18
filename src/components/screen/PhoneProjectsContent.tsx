@@ -1,10 +1,4 @@
 import React from "react";
-import AboutMe from "../AboutMe";
-import TechnicalSkills from "../TechnicalSkills";
-import SoftSkills from "../SoftSkills";
-import EducationAndTraining from "../EducationAndTraining";
-import WorkExperience from "../WorkExperience";
-import Languages from "../Languages";
 import classNames from "classnames";
 import AnitasVladCV from "../projects/AnitasVladCV";
 
