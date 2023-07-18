@@ -1,12 +1,6 @@
 import React, { useState } from "react";
-import AboutMe from "../AboutMe";
 import ContactAndLinks from "../ContactAndLinks";
-import EducationAndTraining from "../EducationAndTraining";
 import Header from "../Header";
-import Languages from "../Languages";
-import SoftSkills from "../SoftSkills";
-import TechnicalSkills from "../TechnicalSkills";
-import WorkExperience from "../WorkExperience";
 import { Button } from "@material-tailwind/react";
 import classNames from "classnames";
 import PhoneHomeContent from "./PhoneHomeContent";
@@ -18,8 +12,6 @@ function Phone(){
     
     const swapSelectedPage = (option: string) => setSelectedPage(option);
     const isOptionSelected = (opt: string) => selectedPage === opt;
-    const [showHome, setShowHome] = useState(true);
-    const [showPhone, setShowPhone] = useState(true);
   
       return (
         <div className="flex flex-col h-full w-full min-h-full pt-4">
